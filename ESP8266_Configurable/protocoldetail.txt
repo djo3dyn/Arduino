@@ -1,0 +1,63 @@
+#json over TCP
+
+format : json root Array :
+
+[
+  {
+    "fcode": 0,
+    "value1": ,
+    "value2": 
+	,
+	,
+	,
+	,
+	
+  },
+  {
+    ""fcode": 1,
+    "value1": ,
+    "value2": 
+	,
+	,
+	,
+	,
+  }
+  ,
+  ,
+  ,
+]
+
+Function code : 0 --> retrive status device
+
+message to send :
+fcode : 0
+
+message receive :
+fcode : 0
+respons : 1 ---> 1 mean OK
+
+Function code : 1 ---> Read all exist data
+
+message to send:
+fcode : 1
+
+message receive :
+fcode : 1
+objectno : #
+param : ****
+param : ****
+.....
+
+Function code : 2 ----> Write data
+
+message to send:
+fcode : 2
+objectno : #
+param : ****
+param : ****
+.....
+
+message receive :
+fcode : 2
+respons : 1 ---> 1 mean OK
+  

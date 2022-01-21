@@ -1,0 +1,23 @@
+#---Check device---#
+#req:
+[{"apikey" : "abcdefghijk","fcode" : 0 , "length" : 0}]
+#response:
+[{"fcode" : 0 , "length" : 1},{"stat" : "ok" , "wifimode" : "STA"}]
+
+
+#---set sta ssid and password fcode = 20
+#req:
+[{"apikey" : "abcdefghijk","fcode" : 20 , "length" : 1},{"ssid" : "BATARA_LT2" , "pass" : "Bismill4h"}]
+#response:
+[{"fcode" : 20 , "length" : 1},{"message" : "STA ssid & password set OK"}]
+
+#--- set to STA mode fcode = 21
+#req
+[{"apikey" : "abcdefghijk","fcode" : 21 , "length" : 0}]
+#response:
+[{"fcode" : 21 , "length" : 1},{"message" : "Set to STA mode..."}]
+
+
+
+
+

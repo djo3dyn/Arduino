@@ -1,0 +1,5 @@
+{
+    "sketch": "AnalogReadSerial.ino",
+    "port": "COM51",
+    "board": "arduino:avr:uno"
+}

@@ -1,0 +1,45 @@
+JProtocolJson
+use TCP port 8871 for exchange data
+use UDP port 8870 for device discovery
+use UDP port 18870 for app deiscovery reply data
+
+Protocol Packet dalam bentuk json array :
+[
+  {
+    "key" : "value"
+    "key" : "value"
+    "key" : "value"
+     .
+     .
+  },
+  {
+    "key" : "value"
+    "key" : "value"
+    "key" : "value"
+     .
+     .
+  },
+  {
+    "key" : "value"
+    "key" : "value"
+    "key" : "value"
+     .
+     .
+  }
+]
+
+Protocol frame format :
+[ "header" , "data 1" , "data 2" , "data 3" , . , dst.. ]
+
+Protocol Header :
+header harus di index pertama dalam array untuk menjelaskan data-data yg dibelakangnya
+
+Header Format:
+[
+  {
+    "apikey" : "ajjahsghhdga"	-----> key autorisasi
+    "fcode" : 0 		-----> Function code dari data 
+    "length" : 1		-----> jumlah data yg dikirim
+  },
+  "data" . . .
+]
